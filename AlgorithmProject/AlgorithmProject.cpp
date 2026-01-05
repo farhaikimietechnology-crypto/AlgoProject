@@ -5,6 +5,7 @@
 #include <chrono>
 #include <string>
 #include "sorting.h"
+#include "searching.h"
 
 using namespace std;
 using namespace chrono;
@@ -142,7 +143,7 @@ void showMenu() {
             displayUnsortedData();
             break;
         case 2:
-            cout << "\n>>> Searching (handled by another teammate)\n";
+            showSearchMenu(students, n);
             break;
 
         case 3: {

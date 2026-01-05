@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AlgorithmProject.cpp" />
+    <ClCompile Include="AlgorithmProject\searching.cpp" />
     <ClCompile Include="Calculation.cpp" />
     <ClCompile Include="RiskStudentcpp.cpp" />
     <ClCompile Include="sorting.cpp" />
     <ClCompile Include="StudentListcpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlgorithmProject\searching.h" />
     <ClInclude Include="sorting.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
