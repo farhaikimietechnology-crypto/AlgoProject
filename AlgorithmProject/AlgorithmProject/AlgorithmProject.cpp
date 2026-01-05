@@ -5,6 +5,8 @@
 #include <chrono>
 #include <string>
 #include "sorting.h"
+#include "searching.h"
+
 
 using namespace std;
 using namespace chrono;
@@ -159,7 +161,7 @@ void showMenu() {
 
     while (true) {
         cout << "\n=========== MAIN MENU ==========\n"
-            << "1. Searching\n"
+            << "1. Search Student\n"
             << "2. View Student Scores\n"
             << "3. Calculate Average Score\n"
             << "4. Back to Home\n"
@@ -170,7 +172,7 @@ void showMenu() {
 
         switch (menuChoice) {
         case 1:
-            cout << "\n>>> Searching (handled by another teammate)\n";
+            showSearchMenu(students, n);
             break;
 
         case 2: {
